@@ -1,0 +1,222 @@
+\section{Auswertung} 
+
+\subsection{Untersuchung des Selektiv-Verstärkers}
+
+\begin{flushleft}
+    Untersucht wird die Ausgangsspannung $\text{U}_{\text{A}}$ des Selektivverstärkers bei konstanter Eingangsspannung $\text{U}_{\text{E}}$ in Abhängigkeit von der Frequenz. 
+    Durchnommen wird die Aufgabe mit einer Güte von $\text{Q} = 20$, sowie mit Durchlassfrequenzen zwischen $10\,\unit{\kilo\hertz}$ bis $30\,\unit{\kilo\hertz}$.
+    Die Frequenzen $\nu$ mit den jeweiligen Ausgangsspannungen werden in Tabelle \ref{Tabelle1} festgehalten. 
+    Aus der daraus resultierenden Durchlasskurve, Abbildung \ref{Abbildung6}, wird die Güte nach der Formel (\ref{12}) dazu wie in Abbildung \ref{Abbildung3} berechnet.
+\end{flushleft}
+
+\begin{table}[H]
+    \centering
+    \caption{Messwerte zur Untersuchung des Selektiv-Verstärkers.} 
+    \label{Tabelle1}
+    \begin{tabular} {c  c  c  c}
+        \toprule
+        {$ \text{f} \mathbin{/} \unit{\kilo\hertz} $} &
+        {$ \text{U} \mathbin{/} \unit{\volt} $} &
+        {$ \text{f} \mathbin{/} \unit{\kilo\hertz} $} &
+        {$ \text{U} \mathbin{/} \unit{\volt} $} \\
+        \midrule
+        10,0 & 0,19 & 20,2 & 1,70 \\
+        10,8 & 0,22 & 20,1 & 1,80 \\
+        11,5 & 0,22 & 20,5 & 2,60 \\
+        12,2 & 0,24 & 20,9 & 3,00 \\
+        12,7 & 0,26 & 21,5 & 13,0 \\
+        13,3 & 0,29 & 22,0 & 14,0 \\
+        14,0 & 0,32 & 22,5 & 5,60 \\
+        14,4 & 0,34 & 23,1 & 2,40 \\
+        14,9 & 0,36 & 23,5 & 2,00 \\
+        15,2 & 0,40 & 24,0 & 1,50 \\
+        16,1 & 0,48 & 24,8 & 1,10 \\
+        17,1 & 0,60 & 25,2 & 1,00 \\
+        17,6 & 0,72 & 26,1 & 0,80 \\
+        18,3 & 0,85 & 26,9 & 0,72 \\
+        18,7 & 0,95 & 27,6 & 0,60 \\
+        19,2 & 1,15 & 29,3 & 0,48 \\
+        19,5 & 1,30 & 29,9 & 0,44 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=80mm]{bilder/Gaußglocke.png}
+    \caption{Durchlasskurve des Selektiv-Verstärkers\label{Abbildung6} }
+\end{figure}
+
+\begin{align*}
+    \intertext{Daraus folgt für die Güte}
+    \text{Q} = ( 27,5 \pm 0,5 )\,.
+\end{align*}
+
+\subsection{Unter der Suszeptibilität seltener Erd-Elemente}
+
+\begin{align}
+    \intertext{Für den Aufgabenteil wird eine Spule mit der Länge $\text{l} = 0,135\,\unit{\meter}$, Widerstand $\text{R} = 0,7\,\unit{\ohm}$, Windungszahl $\text{n} = 250$ und einer Querschnittsfläche von $\text{F} = 86,6 \cdot 10^{-6}\,\unit{\meter}^2$ verwendet.
+    Da die Proben aus staubförmigen Material bestehen und sich nicht beliebig stopfen lassen ist ihre Dichte geringer.
+    Aus diesem Grund wird die Querschnittsfläche nach der Formel}
+    \text{Q}_{\text{real}} = \frac{\text{m}_{\text{p}}}{\text{L} \cdot \delta_{\text{w}}}\,, \label{13}
+    \intertext{für jede einzelne Probe korrigiert.
+    Benutzt werden drei Ionen mit den jeweiligen Daten in der Tabelle \ref{Tabelle2}.} \notag
+\end{align}
+
+
+\begin{table}[H]     
+    \centering
+    \caption{Daten zu dem Ionen.} 
+    \label{Tabelle2}
+    \begin{tabular} {c  c  c  c  c}
+        \toprule
+        {Ionen} &
+        {$ \text{m}_{\text{p}} \mathbin{/} \si{\kilogram}$} &
+        {$ \text{L} \mathbin{/} 10^{-2}\,\unit{\meter}$} & 
+        {$ \delta_{\text{w}} \mathbin{/} \frac{\si{\kilogram}}{\unit{\meter}^{3}}$} &
+        {$ \text{Q}_{\text{real}} \mathbin{/} 10^{-6}\,\unit{\meter}^2$} \\
+        \midrule
+        $\text{Dy}_{2}\text{O}_{3}$ & 0,0151 & $15,40 \pm 0,10$ & 7800 & 12,57\\
+        $\text{Gd}_{2}\text{O}_{3}$ & 0,0141 & $15,73 \pm 0,15$ & 7400 & 12,11\\
+        $\text{Nd}_{2}\text{O}_{3}$ & 0,0185 & $15,56 \pm 0,21$ & 7240 & 16,42\\
+    \end{tabular} 
+\end{table}
+
+\begin{flushleft}
+    Gemessen wird die Brückenspannung sowie der Widerstand nachdem Abgleich ohne Probe.
+    Die Probe wird eingeführt, die Brückenspannung wird abgelesen und nachdem Abgleich wird der Widerstand abgelesen.
+    Der Vorgang wiederholt sich für alle drei Ionen und wird in Tabelle \ref{Tabelle3} festgehalten. 
+    Aus der Widerstandsänderung $\increment\text{R}$, der Formel (\ref{10}) und (\ref{11}) resultiert die Größe der Suszeptibilität, notiert in Tabelle \ref{Tabelle5}. 
+    Der Betrag der Speisespannung beiträgt $\lvert \text{U}_{\text{sp}} \rvert = 1\,\unit{\volt}$ und $\text{R}_{3}$ beträgt $1000\,\unit{\ohm}$.
+\end{flushleft}
+
+\begin{table}[H]
+    \centering
+    \caption{Messergebnisse der Ionen.} 
+    \label{Tabelle3}
+    \begin{tabular} {c || c  c  c  c  c  c}
+        \toprule
+        {Ionen} &
+        {$ \text{U}_{\text{oP}} \mathbin{/} 10^{-3}\,\unit{\volt} $} &
+        {$ \text{R}_{\text{oP}} \mathbin{/} 10^{-3}\,\unit{\ohm} $} &
+        {$ \text{U}_{\text{mP}} \mathbin{/} 10^{-3}\,\unit{\volt} $} &
+        {$ \text{R}_{\text{mP}} \mathbin{/} 10^{-3}\,\unit{\ohm} $} &
+        {$ \increment\text{U} \mathbin{/} 10^{-3}\,\unit{\volt} $} &
+        {$ \increment\text{R} \mathbin{/} 10^{-3}\,\unit{\ohm} $}  \\
+        \midrule
+        \underline{$\text{Dy}_{2}\text{O}_{3}$} & 13,0 & 2525 & 17,5 & 990  & 4,5 & 1535 \\
+                                                & 12,5 & 2370 & 15,5 & 1050 & 3,0 & 1320 \\
+                                                & 12,0 & 2770 & 18,5 & 975  & 6,5 & 1790 \\
+        \hline
+        \underline{$\text{Gd}_{2}\text{O}_{3}$} & 11,5 & 2575 & 13,5 & 1825 & 2,0 & 750 \\
+                                                & 12,5 & 2650 & 13,5 & 2070 & 1,0 & 580 \\
+                                                & 12,5 & 2645 & 13,0 & 1850 & 0,5 & 795 \\
+        \hline
+        \underline{$\text{Nd}_{2}\text{O}_{3}$} & 11,5 & 2650 & 12,5 & 2385 & 1,0  & 265 \\
+                                                & 12,5 & 2715 & 12,0 & 2420 & -0,5 & 295 \\
+                                                & 12,0 & 2610 & 12,0 & 2385 & 0    & 225 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{flushleft}
+    Die Werte werden in Tabelle \ref{Tabelle4} und \ref{Tabelle5} gemittelt und die Standardabweichung gebildet.
+\end{flushleft}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Mittelwerte und Abweichungen der Spannungen.} 
+    \label{Tabelle4}
+    \begin{tabular} {c || c  c  c }
+        \toprule
+        {Ionen} &
+        {$ \text{U}_{\text{oP}} \mathbin{/} 10^{-3}\,\unit{\volt} $} &
+        {$ \text{U}_{\text{mP}} \mathbin{/} 10^{-3}\,\unit{\volt} $} &
+        {$ \increment\text{U} \mathbin{/} 10^{-3}\,\unit{\volt} $} \\
+        \midrule
+        $\text{Dy}_{2}\text{O}_{3}$ & $12,50 \pm 0,40$ & $17,16 \pm 0,24$ & $4,60 \pm 1,43$ \\
+        $\text{Gd}_{2}\text{O}_{3}$ & $12,16 \pm 0,47$ & $13,30 \pm 0,23$ & $1,16 \pm 0,62$ \\
+        $\text{Nd}_{2}\text{O}_{3}$ & $12,00 \pm 0,40$ & $12,16 \pm 0,23$ & $0,16 \pm 0,62$ \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Mittelwerte und Abweichungen der Widerstände.} 
+    \label{Tabelle5}
+    \begin{tabular} {c || c  c  c }
+        \toprule
+        {Ionen} &
+        {$ \text{R}_{\text{oP}} \mathbin{/} 10^{-3}\,\unit{\ohm} $} &
+        {$ \text{R}_{\text{mP}} \mathbin{/} 10^{-3}\,\unit{\ohm} $} &
+        {$ \increment \text{R}  \mathbin{/} 10^{-3}\,\unit{\ohm} $}  \\
+        \midrule
+        $\text{Dy}_{2}\text{O}_{3}$ & $2555 \pm 166,74$ & $1005   \pm 32,40$  & $1550  \pm 194,2$ \\
+        $\text{Gd}_{2}\text{O}_{3}$ & $2623 \pm 34,23$  & $1915   \pm 110,07$ & $708,3 \pm 92,58$ \\
+        $\text{Nd}_{2}\text{O}_{3}$ & $2658 \pm 43,26$  & $2396,6 \pm 272,37$ & $261,6 \pm 28,67$ \\ 
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Suszeptibilität der seltenen Erd-Elemente.} 
+    \label{Tabelle6}
+    \begin{tabular} {c |  c  c  c}
+        \toprule
+        {Ionen} &
+        {$ \chi_{\text{U}} $} &
+        {$ \chi_{\text{R}} $} \\
+        \midrule
+        $\text{Dy}_{2}\text{O}_{3}$ & $0,012900 \pm 0,0030590$ & $0,02135 \pm 0,003180$ \\
+        $\text{Gd}_{2}\text{O}_{3}$ & $0,004770 \pm 0,0032715$ & $0,01013 \pm 0,001571$ \\
+        $\text{Nd}_{2}\text{O}_{3}$ & $0,000352 \pm 0,0018523$ & $0,00250 \pm 0,000347$ \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\subsection{Theoretische Berechnung der Suszeptibilität}
+
+\begin{align*}
+    \intertext{Die Suszeptibilität berechnet sich theoretisch nach der Formel (\ref{9}).
+    Aus den Hund'schen Regeln ergeben sich dann die Werte für Spin, Drehimpuls, Gesamtdrehimpuls und der daraus resultierende Landé-Faktor, welcher sich nach Formel (\ref{7}) berechnen lässt.
+    Dabei enthält $\text{Nd}^{3+}$ drei, $\text{Gd}^{2+}$ sieben und die $\text{Dy}^{3+}$ -Hülle neun 4f-Elektronen. 
+    Die Daten werden in Tabelle \ref{Tabelle7} aufgenommen.
+    Als Temperatur wird der Wert $\text{T} = 293\,\unit{\kelvin}$ verwendet.
+    N ist die Anzahl der Momente pro Volumeneinheit und berechnet sich nach}
+    \text{N} = \frac{\delta_{\text{w}}}{\text{M}} \,.
+    \intertext{ M ist dabei die Molare Masse.
+    Daraus folgt}
+    \text{N}_{\text{Dy}_{2}\text{O}_{3}} = 2,52 \cdot 10^{28}\,\frac{1}{\unit{\meter}^3} \\
+    \text{N}_{\text{Gd}_{2}\text{O}_{3}} = 2,46 \cdot 10^{28}\,\frac{1}{\unit{\meter}^3} \\ 
+    \text{N}_{\text{Nd}_{2}\text{O}_{3}} = 2,59 \cdot 10^{28}\,\frac{1}{\unit{\meter}^3}\,. \\
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \caption{Quanteneigenschaften.} 
+    \label{Tabelle7}
+    \begin{tabular} {c|  c  c  c  c}
+        \toprule
+        { } &
+        {$\text{Dy}_{2}\text{O}_{3}$} &
+        {$\text{Gd}_{2}\text{O}_{3}$} &
+        {$\text{Nd}_{2}\text{O}_{3}$} \\
+        \midrule
+        4f-Elektron                        & 9,0  & 7,0 & 3,0  \\
+        Spin S                             & 2,5  & 5,0 & 3,5  \\
+        Drehimpuls L                       & 5,0  & 0   & 6,0  \\
+        Gesamtdrehimpuls J                 & 7,5  & 3,5 & 4,5  \\
+        Landé-Faktor $\text{g}_{\text{i}}$ & 1,33 & 2,0 & 0,73 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Aus den Quanteneigenschaften folgt für die theoretische Werte der Suszeptibilität:}
+    \chi_{\text{T},\text{Dy}_{2}\text{O}_{3}} = 0,0254 \\
+    \chi_{\text{T},\text{Gd}_{2}\text{O}_{3}} = 0,0138 \\
+    \chi_{\text{T},\text{Nd}_{2}\text{O}_{3}} = 0,0030\,. 
+\end{align*}
