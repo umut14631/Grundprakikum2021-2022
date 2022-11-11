@@ -1,0 +1,41 @@
+\section{Theorie}
+
+\begin{align}
+    \intertext{Ultraschallwellen, sind  longitudinale Wellen, haben eine Frequenz von $20\,\unit{\kilo\hertz}$ bis $1\unit{\giga\hertz}$ und werden in der Medizin für die zerstörungsfreie Werkstoffprüfung verwendet.}
+    p(x,t) = p_{0} +v_{0}\,\text{Z}\,\cos(wt\,-\,kx) \label{1}
+    \intertext{Die Ultraschallwelle bewegt sich durch Druckschwankungen fort, wobei $Z = c \cdot \rho$ die akustische Impedanz ist.
+    Diese setzt sich aus der Schallgeschwindigkeit $c$ und der Dichte $\rho$ zusammen.
+    Der Unterschied zwischen einer Ultraschallwelle und einer elektromagnetischen Welle liegt bei der Phasengeschwindigkeit, aufgrund der materialabhängigkeit die durch Druck bzw. Dichteänderung verändert wird.
+    Die Schallwellen breiten sich als Longitudinalwelle in Flüssigkeit und Gasen aus wobei die Geschwindigkeit, in Flüssigkeit, dieser von der Kompressibilität sowie Dichte abhängt}
+    c_{Fl} = \sqrt{\frac{1}{\kappa \cdot \rho}}. \label{2}
+    \intertext{Bei Festkörpern breitet sich die Welle als Longitudinalwelle oder Transversalwelle aus, mit dem Elastizitätsmodul $E$, was für die Kompressibilität $\frac{1}{\kappa}$ ersetzt wird}
+    c_{Fe} = \sqrt{\frac{E}{\rho}}. \label{3}
+    \intertext{Die Schallgeschwindigkeit der beiden Wellenarten unterscheidet sich voneinander, wobei die Schallgeschwindigkeit in Festkörpern Richtungsabhängig.
+    Bei der Schallausbreitung wird ein Teil der Energie absorbiert und die Intensität $I_{0}$ fällt nach der Strecke $x$ exponentiell ab.}
+    I(x) = I_{0} \cdot e^{\alpha x} \label{4}
+    \intertext{\alpha ist hierbei der Absorptionskoeffizient der Schallamplitude.}
+    \intertext{Bei dem Auftreffen einer Schallwelle auf eine Grenzfläche wird ein Teil reflektiert und der Reflektionskoeffizient $R$ setzt sich aus der akustischen Impedanz des auftreffmaterials zusammen.}
+    R = \left(\frac{Z_{1} - Z_{2}}{Z_{1} + Z_{2}}\right)^{2}. \label{5}
+    \intertext{Die Transmission $T$ lässt sich durch $T = 1 - R$ berechnen.}
+    \intertext{Um Ultraschall zu erzeugen gibt es verschiedene Methoden.
+    Eine davon ist durch die Anwendung des reziproken piezo-elektrischen Effekt.
+    Dabei wird ein Kristall in ein Wechselfeld gebracht, welches den Kristall zum schwingen bringt, was wiederum die Ultraschallwellen erzeugt.
+    Wenn die Eigenfrequenz mit der Anregungsfrequenz übereinstimmt können große Schwingungsamplituden erzeugt werden.
+    Die daraus resultierenden Schallenergien sind extrem hoch und können genutzt werden.
+    Der Piezokristall kann nicht nur als Erzeuger sondern auch als Empfänger für Ultraschallwellen genutzt werden.
+    Ultraschallwellen werden in der Medizin dafür verwendet, Informationen über den durchstrahlten Körper zu erhalten.
+    Die Laufzeitmessung ist ein häufig verwendetes Messverfahren, wobei kurzzeitige Impulse in Richtung Empfänger ausgesendet werden, womit die Strecke zum Empfänger bestimmt werden kann.} \notag
+\end{align}
+
+\begin{align}
+    \intertext{Das Durchschallungs-Verfahren ist eines der zwei Methoden die bei diesem Verfahren angewandt wird.
+    Bei diesem Verfahren werden kurzzeitige Schallimpulse ausgesendet, welche auf der anderen Seite wieder von einem Ultraschallempfänger aufgefangen wird.
+    Falls eine Fehlstelle auf diesem Weg vorhanden ist, wird eine abgeschwächtere Intensität gemessen. 
+    Jedoch kann nicht gesagt werden wo sich diese befindet.
+    Bei dem Impuls-Echo-Verfahren ist die Sonde Ultraschallsender sowie empfänger.
+    Reflekitert wird die Ultraschallwelle hierbei an der Grenzfläche des durchstrahlten Objekts.
+    Bei vorhandenen Fehlstellen gibt die Größe des Signals Rückschlüssse zu der Größe der Fehlstelle.
+    Über die Laufzeit kann die Lage der Fehlstelle ermittelt werden.}
+    \text{s} = \frac{1}{2} c \text{t} \label{6}
+    \intertext{Die Laufzeit kann in einem A-Scan, B-Scan oder TM-Scan als Diagramm dargestellt werden.} \notag
+\end{align}
