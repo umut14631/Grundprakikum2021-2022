@@ -1,0 +1,45 @@
+\section{Theorie}
+
+\begin{flushleft}
+    Das Trägheitmoment $ I $ ist eine von drei physikalische Komponenten die für das beschreiben einer Rotationsbewegung benötigt ist.
+    Das Drehmoment $ M $ und die Winkelbeschleunigung $ \dot{\omega} $ sind die anderen Komponenten. 
+    Das Trägheitsmoment lässt sich ausdrücken als:   
+\end{flushleft}
+
+
+\begin{align}
+    I = mr^2
+    \intertext{für eine punktförmige Masse $ m $ mit dem Abstand $ r $ von der Drehachse.
+    Alle Massenelemente eines ausgedehnten Körpers, welche sich um eine Achse drehen, bewegen sich mit gleicher Winkelgeschwindigkeit um die Drehachse.
+    Daraus folgt das Gesamtträgheitsmoment}
+    I = \sum \limits_{i} r^2_{i} \cdot m_{i} . \notag 
+    \intertext{Für infinitisimale Massen gilt} 
+    I = \displaystyle\int r^2 \hspace{0.1cm} dm. \notag
+    \intertext{Das Drehmoment ist eine lageabhängige Komponente, welche von der Lage der Drehachse abhängt.
+    Die Berechnung des Trägheitsmomentes ist einfacher berechenbar für geometrische Körper, wie z.B. eine Kugel oder ein Zylinder, bei denen die Drehachse durch den Schwerpunkt $ S $ verlaufen, als für komplexere Körper (wie z.B. eine Holzpuppe). 
+    Hierbei ist es einfacher den Körper in kleinere Segmente aufzuteilen und die berechneten Trägheiten aufeinander zu addieren, wenn sie alle von einer Achse abhängig sind.
+    Bei Körpern bei denen die Drehachse nicht durch den Schwerpunkt verläuft, sondern um einen Abstand $a$ parrallel verschoben, ist wird der Satz von Steiner, um das Trägheitsmoment zu berechnen, benutzt}
+    I = I_{s} + m \cdot a^2. \label{2}
+    \intertext{Das $I_{s}$ ist hierbei das Trägheitsmoment, welches durch den Schwerpunkt des Körpers verläuft,
+    $ m $ die Gesamtmasse des Körpers und a der Abstand zur Schwerpunktsachse.
+    Einige Trägheitsmomente welche für dieses Experiment wichtig sein werden, sind}
+    I_{\text{Stab}} = \frac{1}{12} ml^2, \notag \\ 
+    I_{\text{Kugel}} = \frac{2}{5} mR^2, \label{3} \\
+    I_{\text{Zylinder}} = \frac{1}{2}mR^2. \label{4}
+    \intertext{Für das Drehmoment gilt, wenn eine Kraft im Abstand r eingreift, $ M = \vec{F} \times \vec{r} $.
+    Würde diese Kraft dabei um $ \alpha $ ausgelenkt, dann folgt dafür:} 
+    \to  M = \vec{F} \cdot \vec{r}  \cdot \sin(\alpha) 
+\end{align}
+
+\begin{center}
+    ($\vec{F}$ und $\vec{r}$ stehen senkrecht zueinander).
+\end{center}
+
+\begin{align}
+    \intertext{Durch das Auslenken entsteht eine harmonische Schwingung mit der Dauer:}
+    T = 2\pi \cdot \sqrt{\frac{I}{D}}.
+    \intertext{Durch Umformen ensteht}
+    I = \frac{T^2 \cdot D}{4\pi^2}.
+    \intertext{Die Relative Abweichung wird in \% bestimmt, durch}
+    a = \frac{x_{exp} - x_{theo}}{x_{theo}} \cdot 100 \label{8}
+\end{align}

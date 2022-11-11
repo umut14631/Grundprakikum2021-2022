@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'V101.blg'
+[71] biber:340> INFO - === Fri Dec 10, 2021, 21:13:58
+[85] Biber.pm:415> INFO - Reading 'V101.bcf'
+[140] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[151] Biber.pm:4340> INFO - Processing section 0
+[171] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[177] bibtex.pm:1689> INFO - LaTeX decoding ...
+[183] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[238] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[238] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[238] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[239] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[263] bbl.pm:654> INFO - Writing 'V101.bbl' with encoding 'UTF-8'
+[264] bbl.pm:757> INFO - Output to V101.bbl
