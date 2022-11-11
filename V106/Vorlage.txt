@@ -1,0 +1,83 @@
+\begin{flushleft}
+\end{flushleft}
+
+\begin{center}
+\end{center}
+
+\begin{equation}
+\end{equation}
+
+\begin{align}
+\end{align}
+
+\begin{align*}
+\end{align*}
+
+\begin{figure}
+    \centering
+    \includegraphics[height=80mm]{.jpeg}
+    \caption{\label{1} }
+\end{figure}
+
+die daraus resultierenden Werte aus Tabelle (\ref{1}) festgehalten
+
+\begin{figure}
+    \begin{subfigure}{0.60\textwidth}
+        \centering
+        \includegraphics[width=53mm]{.jpeg}
+        \caption{} 
+        \label{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.60\textwidth}
+        \centering
+        \includegraphics[height=73mm]{.jpeg}
+        \caption{} 
+        \label{}
+    \end{subfigure}
+    \caption{}
+    \label{}
+\end{figure}
+
+
+\begin{table} 
+    \centering
+    \caption{}
+    \label{Tabelle}
+    \begin{tabular} {c}
+        \toprule
+        {$ $} \\
+        \midrule
+         \\
+         \\
+         \\
+         \\
+         \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{}
+    \label{Tabelle}
+    \begin{tabular} {c  c  c  c}
+        \toprule
+        {$ $} &
+        {$ $} &
+        {$ $} &
+        {$ $} \\
+        \midrule
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\cite[welche Seite]{Name des Verzeichniseintrags}
+
+\nocite{*}

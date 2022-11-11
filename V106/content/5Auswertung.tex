@@ -1,0 +1,306 @@
+\section{Auswertung}
+
+\subsection{Messunsicherheiten}
+
+\begin{align*}
+    \intertext{Bei fehlerhafteten Größen wird der neue Fehler mithilfe von Gauß´schen Fehlerfortpflanzung angegeben}\\
+    \increment f = \sqrt{\frac{N}{i=1} \cdot (\frac{\partial f}{\partial x_{i}}^2) \cdot (\increment x_{i}) }.
+\end{align*} 
+
+\subsection{Auswertung des erstens Durchlaufs}
+
+\begin{flushleft}
+    Die Konstruktion besteht aus zwei Pendel, die nicht mit einer Feder verbunden worden sind. 
+    Die Länge der beiden Pendel beträgt $ l_{1,2} = 0,78 \, \unit{\meter} $.
+    Die Massen haben je ein Gewicht von $ m_{1,2} = 1\, \unit{\kilo\gram} $.
+    Beide Pendel werden jeweils um $ \increment x_{Auslenkung} = 0,075 \, \unit{\meter} $ ausgelenkt. 
+    Die gemessene Schwingungsdauer besteht aus fünf Schwingungen.
+\end{flushleft} 
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der freischwingenden Pendel des ersten Durchgangs.}
+    \label{Tabelle1}
+    \begin{tabular} {c  c}
+        \toprule
+        {$T_{1,v1} \mathbin{/} \unit{\second}$} &
+        {$T_{2,v1} \mathbin{/} \unit{\second}$} \\
+        \midrule
+         8,83 & 8,91 \\
+         8,75 & 8,86 \\
+         8,86 & 8,63 \\
+         8,83 & 8,65\\
+         8,78 & 8,62 \\
+         8,93 & 8,51 \\
+         8,82 & 8,53 \\
+         8,53 & 8,88 \\
+         8,72 & 8,61 \\ 
+         8,67 & 8,81 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Die Werte werden gemittelt und die dazugehörige Standardabweichung bestimmt, sowie auf eine Periodenschwingung normiert }\\
+    T_{1,Pendel 1} = (1,754 \pm 0,025)\, \unit{\second}\\
+    T_{2,Pendel 2} = (1,740 \pm 0,029)\, \unit{\second}.
+\end{align*}
+
+\underline{\textbf{Experimentelle Bestimmung}}
+
+\begin{flushleft}
+    Die Pendel behalten ihre Länge und werden erneut um $ 0,075\, \unit{\meter} $ ausgelenkt.
+\end{flushleft}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der gleichphasigen Schwingung des ersten Durchgangs.}
+    \label{Tabelle2}
+    \begin{tabular} {c}
+        \toprule
+        {$ T_{+,v1 } \mathbin{/} \unit{\second} $} \\
+        \midrule
+         8,54 \\
+         8,59 \\
+         8,74 \\
+         8,47 \\
+         8,77 \\
+         8,54 \\
+         8,75 \\
+         8,37 \\
+         8,72 \\
+         8,43 \\
+         8,57 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Für die Schwingungsdauer $T_{+}$ folgt}\\
+    T_{+,v1} = (1,718 \pm 0,027)\, \unit{\second}.\\
+    \intertext{Die Frequenz hat nach der Formel (\ref{1}), einen Wert von}\\
+    \omega_{+,exp,v1} = (3,657 \pm 0,0117)\, \frac{1}{s}.
+\end{align*}
+
+\begin{flushleft}
+    Für die gegenphasige Schwingung werden beide Pendel nach innen um $ 0,055\, \unit{\meter} $ ausgelenkt.
+\end{flushleft}
+
+\begin{table}[H] 
+    \centering
+    \caption{Die Messwerte der gegenphasigen Schwingung des ersten Durchgangs.}
+    \label{Tabelle3}
+    \begin{tabular} {c}
+        \toprule
+        {$ T_{-,v1 } \mathbin{/} \unit{\second} $} \\
+        \midrule
+         8,34 \\
+         8,09 \\
+         8,17 \\
+         7.99 \\
+         8,22 \\
+         8,14 \\
+         8,10 \\
+         8,20 \\
+         8,02 \\
+         8,11 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Für die Schwingungsdauer $ T_{-} $ folgt} \\
+    T_{-,v1} = (1,629 \pm 0,02)\, \unit{\second}.\\
+    \intertext{Die Frequenz lässt sich ableiten durch die Formel (\ref{3})}\\
+    \omega_{-,exp,v1} = (3,855 \pm 0,0097)\, \frac{1}{s}. \\
+    \intertext{Die Kopplungskonstante errechnet sich durch die Formel (\ref{7}). } \\
+    \intertext{Es ergibt sich}\\
+    K_{v1} = (0,0527 \pm 0,1347).
+\end{align*}
+
+\underline{\textbf{Theoretische Bestimmung}}
+
+\begin{flushleft}
+    Die Frequenz bestimmt sich durch die Formel (\ref{1}) unter der Beachtung, dass fünf Schwingungen gemessen worden sind.
+\end{flushleft}
+
+\begin{align*}
+    \intertext{Für die Gleichphasige Schwingung ergibt sich}\\
+    \omega_{+,theo,v1} = (3,546 \pm 0,0228 )\, \frac{1}{s}.\\
+    \intertext{Daraus, aus der Formel (\ref{2}), die Dauer }\\
+    T_{+,theo,v1} = (1,771 \pm 0,002 )\, \unit{\second}.\\
+    \intertext{Die Gegenphasige wird mit den Formeln (\ref{3}) und (\ref{4}) bestimmt, dabei wird die Kopplungskonstante $K$ aus der experimentellen Herleitung genommen. Unter der Beachtung der Fehler}\\  
+    \omega_{-,theo,v1} = ( 3,5653 \pm 0,0504 )\, \frac{1}{s} \\
+    T_{-,theo,v1} = (1,762 \pm 0,004 )\, \unit{\second}. \\
+\end{align*}
+
+
+\begin{flushleft}
+    Um die Schwebungsdauer zu bestimmen, wird ein Pendel, $Pendel_{1}$, in die Ruhelage versetzt und $ Pendel_{2} $ um 
+    $ \alpha_{2} \neq 0 $ ausgelenkt, in unserem Fall $ \increment x_{schw,Ausl} = 0,075\, \unit{\meter} $.
+    Die Pendellänge bleibt erhalten.
+\end{flushleft}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der gekoppelten Schwingung des ersten Durchgangs.}
+    \label{Tabelle4}
+    \begin{tabular} {c  c}
+        \toprule
+        {$ T_{Gs,v1} \mathbin{/} \unit{\second}$} &
+        {$ T_{Schw.,v1} \mathbin{/} \unit{\second}$} \\
+        \midrule
+         9,22 & 19,68 \\
+         8,80 & 19,46 \\
+         9,10 & 19,51 \\
+         8,55 & 19,10 \\
+         8,99 & 18,91 \\
+         8,67 & 19,45 \\
+         8,64 & 19,34 \\
+         8,52 & 19,92 \\
+         8,65 & 18,76 \\
+         8,73 & 19,15 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Die Werte werden gemittelt und die Abweichung bestimmt}\\
+    T_{Gs,v1} = (1,757 \pm 0,047)\, \unit{\second}\\
+    T_{Schw.,v1} = (19,328 \pm 0,3529 )\, \unit{\second}.\\
+    \intertext{Für die Schwebungsfrequenz ergibt sich aus dem Kehrwert der Schwebungsdauer}
+    \omega_{s,exp} = ( 0,0517 \pm 0,0009 )\, \frac{1}{s}. \\ 
+    \intertext{Die Schwingungsdauer wird mithilfe der gleichphasigen und gegensinnigen Schwingung berechnet mit der Formel (\ref{5}):}\\
+    T_{S} = (22,57 \pm 0,6110 )\, \unit{\second}
+    \intertext{sowie die Schwebungsfrequenz $ \omega_{s} $ mit Formel (\ref{6}): }\\
+    \left\lvert \omega_{s,theo} \right\rvert = (0,0193 \pm 0,0151 )\, \frac{1}{s}.
+\end{align*}
+
+\subsection{Auswertung für den zweiten Durchlauf}
+
+\underline{\textbf{Experimentelle Bestimmung}}
+
+\begin{flushleft}
+    Die Konstruktion bleibt erhalten. Man geht vor wie im ersten Durchgang vor, nur hierbei wurde die Pendellänge auf $ l = 0,99\, \unit{\meter} $
+    erweitert.
+\end{flushleft}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der frei schwingenden Pendel des zweiten Durchgangs.}
+    \label{Tabelle5}
+    \begin{tabular} {c  c}
+        \toprule
+        {$T_{1,v2} \mathbin{/} \unit{\second}$} &
+        {$T_{2,v2} \mathbin{/} \unit{\second}$} \\
+        \midrule
+         9,67 & 9,75 \\
+         9,87 & 9,63 \\
+         9,86 & 9,82 \\
+         9,73 & 9,73\\
+         9,87 & 9,63 \\
+         9,79 & 9,69 \\
+         9,58 & 9,41 \\
+         9,53 & 9,69 \\
+         9,72 & 9,74 \\ 
+         9,72 & 9,73 \\
+        \bottomrule
+    \end{tabular} 
+\end{table} 
+
+\begin{align*} 
+    \intertext{Daraus folgt experimentell}\\
+    T_{1,exp,v2} = (1,946 \pm 0,0236 )\, \unit{\second} \\
+    T_{2,exp,v2} = (1,936 \pm 0,0222 )\, \unit{\second}.
+\end{align*}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der gleichphasigen und gegenphasigen Schwingung des zweiten Durchgangs.}
+    \label{Tabelle6}
+    \begin{tabular} {c  c}
+        \toprule
+        {$ T_{gl,v2 } \mathbin{/} \unit{\second} $} &
+        {$ T_{gg,v2} \mathbin{/} \unit{\second} $} \\
+        \midrule
+        9,62 & 9,47 \\
+        9,60 & 9,22 \\
+        9,67 & 9,20 \\
+        9,44 & 9,08 \\
+        9,32 & 9,05 \\
+        9,74 & 9,13 \\
+        9,77 & 9,93 \\
+        9,69 & 9,27 \\
+        9,45 & 9,25 \\
+        9,67 & 9,27 \\
+        \bottomrule
+    \end{tabular} 
+\end{table} 
+
+\begin{align*}
+    \intertext{Daraus folgt:}\\
+    T_{+,exp,v2} = (1,919 \pm 0,029 )\, \unit{\second} \\
+    T_{-,exp,v2} = (1,857 \pm 0,050 )\, \unit{\second}. \\
+    \intertext{Mit der Kreisfrequenz aus den Formeln (\ref{1}) und (\ref{3})}\\
+    \omega_{+,exp,v2} = (3,27 \pm 0,009 )\, \frac{1}{s}\\
+    \omega_{-,exp,v2} = (3,382 \pm 0,0185 )\, \frac{1}{s}\\
+    \intertext{Die Kopplungskonstante hat dabei einen Wert von}\\
+    K_{v2} = ( 0,0328\pm 0,0050 )
+\end{align*}
+
+
+\underline{\textbf{Theoretische Bestimmung}}
+
+\begin{align*}
+    \intertext{Für die Gleichphasige Schwingung ergibt sich nach der Formel (\ref{1}):}\\
+    \omega_{+,theo,v2} = (3,147 \pm 0,0159 )\, \unit{\second}.\\
+    \intertext{Daraus, aus der Formel (\ref{2}), die Dauer}\\
+    T_{+,theo,v2} = (1,996 \pm 0,002 )\, \unit{\second}.\\
+    \intertext{Für die Gegenphasige Schwingung folgt nach der Formel (\ref{3}) und (\ref{4})} \\
+    \omega_{-,theo,v2} = ( 3,1583 \pm 0,0157)\, \frac{1}{s}\\
+    T_{-,theo,v2} = ( 1,989\pm 0,002 )\, \unit{\second}\\
+    \intertext{Für die Schwebedauer wird die selbe Einstellung gewählt, nur die Pendellänge wird auf $ 0,99\, \unit{\meter} $ gesetzt.
+    Die Auswertung ist wie im ersten Durchgang.}
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte der gekoppelten Schwingung des zweiten Durchgangs.}
+    \label{Tabelle7}
+    \begin{tabular} {c  c}
+        \toprule
+        {$ T_{gs,v2} \mathbin{/} \unit{\second}$} &
+        {$ T_{s} \mathbin{/} \unit{\second}$} \\
+        \midrule
+         11,13 & 26,24 \\
+         12,41 & 26,94 \\
+         10,93 & 25,44 \\
+         11,58 & 25,90 \\
+         11,25 & 26,22 \\
+         11,32 & 26,51 \\
+         11,65 & 25,69 \\
+         11,73 & 27,07 \\
+         11,38 & 26,86 \\
+         11,31 & 26,78 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Daraus folgt:}\\
+    T_{gs,exp,v2} = (2,293 \pm 0,081 )\, \unit{\second}\\
+    T_{schw.,exp,v2} = (26,425 \pm 0,6667)\, \unit{\second}\\
+    \intertext{Aus dem Kehrwert der Schwebungsdauer resultiert für die Frequenz}
+    \omega_{s,exp} = (0,037 \pm 0,0004 )\, \frac{1}{s}. \\
+    \intertext{Die Schwebungsdauer wird mithilfe der gleichphasigen und gegensinnigen Schwingung berechnet, mit der Formel (\ref{5}). Es ergibt sich}\\
+    T_{s} = (28,70 \pm 0,2447 )\, \unit{\second}\\
+    \intertext{Mit der Formel (\ref{6}) für die Schwebungsfrequenz}\\
+    \left\lvert \omega_{s,theo} \right\rvert = (-0,112 \pm 0,0205 )\, \frac{1}{s}.\\
+\end{align*}
+
+\begin{align}
+    \intertext{Nun gilt es, die jeweiligen Werte miteinander zu vergleichen. 
+    Dafür wird die Formel (\ref{8}) verwendet:}
+    \text{\underline{ relative Abweichung in \% :}} \hspace{0.5cm} \frac{x_{exp} - x_{theo} }{x_{theo}} \cdot 100. \label{8}
+\end{align}

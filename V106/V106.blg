@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'V106.blg'
+[82] biber:340> INFO - === Fri Jun  3, 2022, 23:46:38
+[125] Biber.pm:415> INFO - Reading 'V106.bcf'
+[182] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[192] Biber.pm:4340> INFO - Processing section 0
+[215] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[234] bibtex.pm:1689> INFO - LaTeX decoding ...
+[241] bibtex.pm:1494> INFO - Found BibTeX data source 'lit.bib'
+[299] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[300] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[301] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[302] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[329] bbl.pm:654> INFO - Writing 'V106.bbl' with encoding 'UTF-8'
+[330] bbl.pm:757> INFO - Output to V106.bbl
