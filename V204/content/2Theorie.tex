@@ -1,0 +1,75 @@
+\section{Theorie}
+
+\begin{flushleft}
+    Ein Temperaturangleich eines Körpers welcher nicht im Temperaturgleichgewicht ist, kann über drei verschiedene Wärmetransportwege stattfinden. 
+    Diese sind Konvektion, Wärmestrahlung und Wärmeleitung. 
+    Die Wärmeleitung ist der Wärmetransport, auf welchen man sich in diesem Versuch konzentiert.
+    Dieser Wärmetransport erfolgt über Phononen und frei bewegliche Elektronen, dies bezieht sich speziell auf Festkörper.
+    Es wird ein Stab betrachtet, mt der Länge $ L $, der Querschnittsfläche $ A $, der Materialdichte $ \rho $ und einer spezifischen Wärme $ c $.
+    Wenn dieser Stab an einem Ende erhitzt wird, oder wärmer ist als der Rest, so fließt eine Wärmemenge 
+\end{flushleft}
+
+\begin{equation}
+    dQ = -\kappa \cdot A \cdot \frac{\partial T}{\partial x}dt \label{1}
+\end{equation}
+
+\begin{flushleft}
+    in einer bestimmten Zeit $ dt $ durch die Querschnittfläche $ A $.
+    Das Minus in der Formel (\ref{1}) steht für die Konvektion, also dem Wärmestrom in die kältere Richtung und das $ \kappa $ für die materialabhängige Wärmeleitfähigkeit des Körpers.
+    Die Wärmestromdichte $ j_{w} $ wird berechnet durch die Formel
+\end{flushleft}
+
+\begin{equation}
+    j_{w} = -\kappa \cdot \frac{\partial T}{\partial x}.\label{2}
+\end{equation}
+ 
+\begin{flushleft}
+    Durch die Kontinuitätsgleichung kann man die eindimensionale Wärmeleitungsgleichung 
+\end{flushleft}
+
+\begin{equation}
+    \frac{\partial T}{\partial t} = \frac{\kappa}{\rho \cdot c} \cdot \frac{\partial^2 T} {\partial x^2}\label{3}
+\end{equation}
+
+\begin{flushleft}
+    aufstellen, welche die Temperaturverteilung in seiner räumlichen und zeitlichen Entwicklung beschreibt.
+    Die Temperaturleitfähigkeit wird durch die Größe $ \frac{\kappa}{\rho \cdot c} = \sigma_{\text{T}}  $ beschrieben und gibt an wie schnell der Temperaturunterschied ausgeglichen wird.
+    Entscheident für die Lösung der der Wärmeleitungsgleichung sind die Stabgeometrie und die Anfangsbedingungen. 
+\end{flushleft}
+
+\newpage
+
+\begin{flushleft}
+    Wenn ein langer Stab abwechselnd erwärmt und abgekühlt wird mit einer Periode $ T $,  
+    wird aufgrund der periodischen Temperaturwechsel eine zeitliche sowie räumliche Temperaturwelle 
+\end{flushleft}
+
+\begin{equation}
+    T(x,t) = T_{\text{max}} \cdot e^{-\sqrt{\frac{\omega \rho c}{2\kappa}} \cdot x} \cdot \cos\left({\omega t - \sqrt{\frac{\omega \rho c}{2\kappa}} \cdot x }\right)\label{4}
+\end{equation}
+
+\begin{flushleft}
+    erzeugt und weitergegeben.
+\end{flushleft}
+
+\begin{flushleft}
+    Die Temperaturwelle bewegt sich mit der Phasengeschwindigkeit 
+\end{flushleft}
+
+\begin{equation}
+   \nu = \frac{\omega}{\kappa} = \omega \mathbin{/} \sqrt{\frac{\omega \rho c}{2\kappa}} = \sqrt{\frac{2\kappa \cdot \omega}{\rho \cdot c}}.
+\end{equation}
+
+\begin{flushleft}
+    Das Amplitudenverhältnis $A_{\text{nah}}$ und $ A_{\text{fern}} $ an den zwei Messstellen $ x_{\text{nah}} $ und $ x_{\text{fern}} $ der Welle liefert die Dämpfung der Welle. 
+    Wenn angenommen wird, dass $\omega = 2\pi \mathbin{/} T^*$ und $ \phi = 2\pi \increment t \mathbin{/} T^*  $ mit der Phase $ \phi $ und der Periodendauer $T^*$, folgt die Wärmeleitfähigkeit als
+\end{flushleft}
+
+\begin{equation}
+    \kappa = \frac{\rho c (\increment x)^2 }{2 \increment t \left(A_{\text{nah}} \mathbin{/} A_{\text{left}}\right)}. \label{6}
+\end{equation}
+ 
+\begin{flushleft}
+    Der Abstand der beiden Messstellen ist gegeben durch $ \increment x $ und die Phasendifferenz der Temperaturwelle zwischen den beiden Messstellen als $ \increment t $.
+\end{flushleft}
+
