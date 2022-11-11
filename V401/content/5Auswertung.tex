@@ -1,0 +1,72 @@
+\section{Auswertung} 
+
+\begin{align}
+    \intertext{Zur Bestimmung der Wellenlänge des Lasers werden die Interferenzmaxima z, sowie die dazugehörige Verschiebung des Spiegels d benötigt.
+    Aus der Verschiebung d und der Voreinstellung $ \text{d}_{\text{v}} = 7 \cdot 10^{-3}\,\unit{\meter}$ resultiert die Differenz $\increment \text{d}$ der Verschiebung des Spiegel.
+    Beachtet wird dabei die Hebelübersetzung von $\overline{\text{U}} = 5,017$. 
+    Die Verschiebung wird um den Faktor $\frac{1}{\overline{\text{U}}}$ erweitert. 
+    Durch das Umformen der Formel (\ref{5}) nach $\lambda$ wird aus den Werte paaren die Wellenlänge gewonnen. 
+    Die entsprechende Messwerte und Wellenlängen folgen in Tabelle \ref{Tabelle1}. 
+    Die Wellenlängen werden gemittelt und die dazugehörige Abweichung wird bestimmt, nach}
+    \overline{\text{x}} = \frac{1}{\text{N}} \sum_{\text{i} = 1}^{\text{N}} \text{x}_{\text{i}}\,, \label{7} \\
+    \increment \overline{\text{x}} = \frac{1}{\sqrt{\text{N}}} \sqrt{ \frac{1}{\text{N}-1} \sum_{\text{i} = 1}^{\text{N}} \left(\text{x}_{\text{i}} - \overline{\text{x}}\right)^{2}}\,. \label{8}
+\end{align}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte und die Wellenlängen.} 
+    \label{Tabelle1}
+    \begin{tabular} {c  c   c}
+        \toprule
+        {$ \text{d} \mathbin{/} 10^{-3}\,\unit{\meter} $} &
+        {$ \text{z} $} &
+        {$ \lambda \mathbin{/} 10^{-9}\,\unit{\meter} $} \\
+        \midrule
+        3,65 & 2002 & 666,33 \\
+        3,65 & 2000 & 667,00 \\
+        3,65 & 2001 & 666,66 \\
+        3,66 & 2001 & 664,66 \\
+        3,70 & 2006 & 655,03 \\
+        3,66 & 2004 & 663,67 \\
+        3,53 & 2001 & 691,30 \\
+        3,58 & 2001 & 681,34 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align}
+    \intertext{Daraus folgt für die Wellenlänge}
+    \lambda = (669,49 \pm 10,64) \cdot 10^{-9}\,\unit{\meter}\,.
+    \intertext{Um den Brechungsindex von Luft zu bestimmen werden zunächst folgende Größen benötigt:}
+    \text{Normaldruck} \,\,\, \text{p}_{0} = 1,0132\,\unit{\bar} \notag \\
+    \text{Normaltemperatur} \,\,\, \text{T}_{0} = 273,15\,\unit{\kelvin}\notag  \\
+    \text{Umgebungstemperatur} \,\,\, \text{T} = 293,15\,\unit{\kelvin}\notag  \\
+    \text{Größe der Messzelle} \,\,\, \text{b} = 50 \cdot 10^{-3}\,\unit{\meter}\,.\notag
+    \intertext{Bei der Messung wird der Kammerdruck p und die Inferenzmaxima z beim Einlassen von Luft beachtet.
+    Die Berechnung des Brechungsindex von Luft erfolgt nach der Formel (\ref{10}).
+    Die Messdaten und die dazugehörigen Brechungsindizes n befinden sich in Tabelle \ref{Tabelle2}. } \notag
+\end{align}
+
+\begin{table}[H]
+    \centering
+    \caption{Die Messwerte zur Berechnung des Brechungsindex von Luft.} 
+    \label{Tabelle2}
+    \begin{tabular} {c  c  c  c}
+        \toprule
+        {$ \text{p} \mathbin{/} \unit{\bar} $} &
+        {$ \text{z} $} &
+        {$ \text{n} $} \\
+        \midrule
+        0,6 & 15 & 1,00055 \\
+        0,6 & 16 & 1,00058 \\
+        0,6 & 16 & 1,00058 \\
+        0,6 & 16 & 1,00058 \\
+        0,6 & 16 & 1,00058 \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{align*}
+    \intertext{Nach Gleichung (\ref{7}) und (\ref{8}) folgt für den Brechungsindex von Luft}
+    \text{n} = (1,000574 \pm 0,000014)\,.
+\end{align*}
