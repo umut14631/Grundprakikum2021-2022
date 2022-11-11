@@ -1,0 +1,95 @@
+\begin{flushleft}    % Wenn du Text ganz links an ansetzen möchtest
+\end{flushleft}
+
+$   $                % Eine Matheumgebung in einem Text erzeugen
+
+\begin{center}       % Wenn du Text in der Mitte ansetzten möchtest
+\end{center}
+
+\begin{equation}     % Eine isolierte und nummerierte Matheumgebung --> Für EINE Gleichung
+\end{equation}
+
+\begin{align}        % Eine Matheumgebung für MEHRERE Gleichungen --> nummerierte Gleichungen 
+\end{align}
+
+\begin{align*}       % Eine Matheumgebung für MEHRERE Gleichungen --> NICHT nummerierte Gleichungen
+\end{align*}
+
+Bei align und align* Umgebung KEINE Leeren Zeilen lassen und Zeile Wechseln mit  \\
+
+\intertext{}         % Einfügen von Text in eine align, oder align* Umgebung
+
+\begin{figure}[H]       % Einfügen von Bildern, pdfs, etc.   [höhe]{format welcher eingefügt wird, also .pdf, .png, .jpeg, .jpg}
+    \centering
+    \includegraphics[height=80mm]{.jpeg}
+    \caption{\label{1} }
+\end{figure}
+
+\ref{}               % Referenzieren von einer Formel, Tabelle, Abbildung
+
+\begin{figure}[H]         % Zwei Abbildungen nebeneinander
+    \begin{subfigure}{0.60\textwidth}
+        \centering
+        \includegraphics[width=53mm]{.jpeg}
+        \caption{} 
+        \label{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.60\textwidth}
+        \centering
+        \includegraphics[height=73mm]{.jpeg}
+        \caption{} 
+        \label{}
+    \end{subfigure}
+    \caption{}
+    \label{}
+\end{figure}
+
+
+\begin{table}[H]     % Tabelle mit einer Spalte
+    \centering
+    \caption{}
+    \label{Tabelle}
+    \begin{tabular} {c}
+        \toprule
+        {$ $} \\
+        \midrule
+         \\
+         \\
+         \\
+         \\
+         \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\begin{table}[H]     % Tabelle mit mehreren Spalten
+    \centering
+    \caption{} 
+    \label{Tabelle}
+    \begin{tabular} {c  c  c  c}
+        \toprule
+        {$ \mathbin{/} $} &
+        {$ \mathbin{/} $} &
+        {$ \mathbin{/} $} &
+        {$ \mathbin{/} $} \\
+        \midrule
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+         &  &  &   \\
+        \bottomrule
+    \end{tabular} 
+\end{table}
+
+\cite[welche Seite]{Name des Verzeichniseintrags}
+
+\nocite{*}    Aufrufen des Literaturverzeichnises ohne im Text zu zitieren
+
+\unit{\}   % Erzeugen von Einheiten
+
+\,         % Erzeugen von Abstand zwischen Zahl und Einheit 
+
+\\         % Zeilenumbruch
